@@ -10,14 +10,14 @@ x1 = (-b + Δ**0.5) / 2 * a
 x2 = (-b - Δ**0.5) / 2 * a
 print(f'O valor de delta é {Δ}')
 
-if a == 0:
+if a == 0: # a não pode ser zero
     print('a variável a edve ser diferente de zero')
-    sys.exit()
+    sys.exit() # encerra o código
     
-if Δ == 0:
-    print(f'O valor de Baskara é {baskara}')
+if Δ == 0: # valor único
+    print(f'O valor de Baskara é {baskara}') 
 
-elif Δ > 0:
+elif Δ > 0: # várias condições
     print('A equação possuí resultados dois reais')
     print(f'Sendo x1 = {x1}')
     print(f'Sendo x2 = {x2}')
