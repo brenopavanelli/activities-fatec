@@ -11,7 +11,7 @@ x2 = (-b - Δ**0.5) / 2 * a
 print(f'O valor de delta é {Δ}')
 
 if a == 0: # a não pode ser zero
-    print('a variável a edve ser diferente de zero')
+    print('a variável a deve ser diferente de zero')
     sys.exit() # encerra o código
     
 if Δ == 0: # valor único
@@ -19,8 +19,8 @@ if Δ == 0: # valor único
 
 elif Δ > 0: # várias condições
     print('A equação possuí resultados dois reais')
-    print(f'Sendo x1 = {x1}')
-    print(f'Sendo x2 = {x2}')
+    print(f'Sendo x1 = {round(x1,2)}')
+    print(f'Sendo x2 = {round(x2,2)}')
 
 elif Δ < 0:
     print('A equação não possuí resultados reais')
