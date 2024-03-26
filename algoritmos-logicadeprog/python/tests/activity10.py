@@ -14,7 +14,7 @@ if a == 0: # a não pode ser zero
     print('a variável a deve ser diferente de zero')
     sys.exit() # encerra o código
     
-if Δ == 0: # valor único
+elif Δ == 0: # valor único
     print(f'O valor de Baskara é {baskara}') 
 
 elif Δ > 0: # várias condições
