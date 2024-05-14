@@ -1,16 +1,9 @@
-peso = int(input('Digite o peso: '))
-altura = float(input('Digite a altura: '))
-imc = peso/(altura * altura)
+nome = []
+notas = []
 
-if imc < 18.5: 
-    print('Abaixo do peso')
-elif imc < 24.9 and imc > 18.6:
-    print('Peso ideal')
-elif imc < 29.9 and imc > 25.0:
-    print('Levemente acima do peso')
-elif imc < 34.9 and imc > 30.0:
-    print('Obesidade I')
-elif imc < 39.9 and imc > 35.0:
-    print('Obesidade II')
-else: 
-    print('Obesidade III')
+for i in range(5):
+    nome.append(input(f"Digite o nome do aluno {i+1}: "))
+    notas.append(int(input(f"Digite a nota do aluno {nome[i]}: ")))
+
+print(f"A nota mais alta é: {max(notas)} do aluno {nome[notas.index(max(notas))]}")
+print(f"A nota mais baixa é: {min(notas)} do aluno {nome[notas.index(min(notas))]}")
