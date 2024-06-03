@@ -2,7 +2,7 @@
 notas = []
 
 for i in range(4):
-    notas.append(int(input('Digite um número: ')))
+    notas.append(int(input('Digite uma nota: ')))
 
 media = sum(notas) / len(notas)
 
