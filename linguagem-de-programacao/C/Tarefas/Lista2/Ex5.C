@@ -1,29 +1,21 @@
 // Ex 05
 #include <stdio.h>
-
-void exibir(int vetor[]) {
-    for (int i = 0;i<6;i++) {
-        printf("%d", vetor[i]);
-    }    
-}
+#include "entrada-saida.c"
 
 int main() {
 
     int numeros[6];
     int numeros_inversos[6];
     
-    for (int i = 0;i<6;i++) {
-        scanf("%d", &numeros[i]); 
-    }
-    
-    exibir(numeros);
+    coletar_vetor(numeros, 6);
+    exibir_vetor(numeros, 6);
     printf("\n");
     
     for (int i = 0;i<6;i++) {
         numeros_inversos[5-i] = numeros[i];
     }
 
-    exibir(numeros_inversos);
+    exibir_vetor(numeros_inversos, 6);
 
     return 0;
 }
