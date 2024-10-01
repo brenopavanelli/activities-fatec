@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Aula 7</title>
+	<meta charset="UTF-8" />
+	<script type="text/javascript">
+	  class Contato {
+		constructor(nome, telefone, celular) {
+		this.nome = nome;
+		this.telefone = telefone;
+		this.celular = celular;
+		}
+	  }
+	  
+	  function listarContatos(lista) {
+	    let auxHtml = '';
+		for (let i = 0; i < lista.length; i++){
+		  auxHtml += '<li>'+ 
+					lista[i].nome + ' - '+
+					lista [i].telefone + ' - '+
+					lista[i].celular +
+					'</li>';
+		}
+		return auxHtml;
+	  }
+	
+	  //criacao dos objetos
+	  let contato = new Contato('Jucelina Silva','16-11','16-22');
+	  let contato2 = new Contato('Teobaldo Souza','16-33','16-44');
+	  
+	  let listaContatos = [];
+	  
+	  window.onload = function() {
+	    document.getElementById('frmContatos').onsubmit = function(evento) {
+		  evento.preventDefault();
+		  let nome = document.getElementById('nome').value;
+		  let telefone = document.getElementById('telefone').value;
+		  let celular = document.getElementById('celular').value;
+		  let novoContato = new Contato(nome, telefone, celular);
+		  listaContatos.push(novoContato);
+		  document.getElementById('lista').innerHTML = listarContatos(listaContatos);
+		  document.getElementById('nome').value = '';
+		  document.getElementById('telefone').value = '';
+		  document.getElementById('celular').value = '';
+		  
+		  alert('ok');
+		}
+	  }
+	</script>
+  </head>
+  <body>
+    <header>
+	  <h1>Lista de Contatos</h1>
+	  <link rel="stylesheet" href="atividade02.css">
+	</header>
+	<main>
+	  <form class="container">
+	    <input type="text" placeholder="Nome" id="nome" />
+		<br /><br />
+		<input type="text" placeholder="Telefone" id="telefone" />
+		<br /><br />
+		<input type="text" placeholder="Celular" id="celular" />
+		<br>
+		<button>Adicionar</button>
+	  </form>
+	</main>
+	<footer>
+	
+	</footer>
+  </body>
+</html>
