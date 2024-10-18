@@ -1,6 +1,9 @@
 {
     "files.associations": {
         "Ex5.C": "cpp",
-        "Ex6.C": "cpp"
+        "Ex6.C": "cpp",
+        "Ex01.C": "cpp",
+        "Ex1.C": "cpp",
+        "Ex02.C": "cpp"
     }
 }
