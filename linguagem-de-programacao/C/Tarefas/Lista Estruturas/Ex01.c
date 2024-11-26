@@ -9,6 +9,8 @@ struct Pessoa {
     float altura;
 };
 
+
+
 void lerDados(struct Pessoa *p) {
     fgets(p->nome, MAX_NOME, stdin);
     
