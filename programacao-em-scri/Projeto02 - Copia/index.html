@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+  <title>Catálogo de Filmes</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <style>
+    body {
+      background: url("https://images.pexels.com/photos/7991404/pexels-photo-7991404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+      color: white;
+      font-size: 24pt;
+    }
+    h2 {
+      color: whitesmoke;
+      font-size: 18pt;
+    }
+    .form-control {
+      background-color: #574949;
+      color: white;
+    }
+    .form-control::placeholder {
+      color: white;
+    }
+    .movie-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .movie-card {
+      width: 250px;
+      background-color: #1e0a0a;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 10px;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container" id="app">
+  <header class="text-center mt-4">
+    <h1>Catálogo de Filmes</h1>
+  </header>
+  <main>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h2>Cadastro de Filme</h2>
+        <input class="form-control mt-3" type="text" placeholder="Título" v-model="titulo" />
+        <input class="form-control mt-3" type="text" placeholder="Gênero" v-model="genero" />
+        <input class="form-control mt-3" type="url" placeholder="URL do Pôster" v-model="poster" />
+        <input class="form-control mt-3" type="number" placeholder="Ano de Lançamento" v-model="ano" />
+        <textarea class="form-control mt-3" placeholder="Sinopse" v-model="sinopse"></textarea>
+        <button class="btn btn-primary mt-3 w-100" @click="salvar()">Salvar Filme</button>
+      </div>
+
+      <div class="col-md-8">
+        <h2>Lista de Filmes</h2>
+        <div class="d-flex flex-wrap justify-content-start">
+          <div v-for="(filme, index) in listaFilmes" class="movie-card">
+            <img :src="filme.poster" alt="Pôster do filme" class="movie-img" />
+            <h5 class="mt-2">{{ filme.titulo }}</h5>
+            <p><strong>Gênero:</strong> {{ filme.genero }}</p>
+            <p><strong>Ano:</strong> {{ filme.ano }}</p>
+            <p><strong>Sinopse:</strong> {{ filme.sinopse }}</p>
+            <button class="btn btn-warning btn-sm mt-2" @click="alterar(index)">Alterar</button>
+            <button class="btn btn-danger btn-sm mt-2" @click="excluir(index)">Excluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script type="text/javascript">
+  class Filme {
+    constructor(titulo, genero, poster, ano, sinopse) {
+      this.titulo = titulo;
+      this.genero = genero;
+      this.poster = poster;
+      this.ano = ano;
+      this.sinopse = sinopse;
+    }
+  }
+
+  var app = new Vue({
+    el: '#app',
+    data: {
+      titulo: '',
+      genero: '',
+      poster: '',
+      ano: '',
+      sinopse: '',
+      listaFilmes: [
+        new Filme('Star Wars', 'Ficção Científica', 'https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/7/9/793820150308-uau-posters-filme-star-wars-geek-retro-scifi-1.jpg', 1977, 'Uma aventura épica nas estrelas.'),
+        new Filme('Harry Potter', 'Fantasia', 'https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/7/175720140528-uau-posters-filmes-harry-potter-8-e-as-reliquias-da-morte-parte-2-4.jpg', 2001, 'O início da jornada de um jovem bruxo.'),
+        new Filme('Indiana Jones', 'Aventura', 'https://uauposters.com.br/media/catalog/product/0/5/058320140408-posters-filmes-indiana-jones.jpg', 1981, 'As aventuras de um arqueólogo destemido.'),
+        new Filme('Batman', 'Ação', 'https://uauposters.com.br/media/catalog/product/2/5/259420220222-uau-posters-the-batman-filmes-7.jpg', 2008, 'O cavaleiro das trevas protege Gotham.')
+      ]
+    },
+    methods: {
+      salvar: function() {
+        let novoFilme = new Filme(this.titulo, this.genero, this.poster, this.ano, this.sinopse);
+        this.listaFilmes.push(novoFilme);
+        this.resetarFormulario();
+      },
+      alterar: function(index) {
+        let filme = this.listaFilmes[index];
+        this.titulo = filme.titulo;
+        this.genero = filme.genero;
+        this.poster = filme.poster;
+        this.ano = filme.ano;
+        this.sinopse = filme.sinopse;
+        this.listaFilmes.splice(index, 1);
+      },
+      excluir: function(index) {
+        if (confirm('Deseja excluir este filme?')) {
+          this.listaFilmes.splice(index, 1);
+        }
+      },
+      resetarFormulario: function() {
+        this.titulo = '';
+        this.genero = '';
+        this.poster = '';
+        this.ano = '';
+        this.sinopse = '';
+      }
+    }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
