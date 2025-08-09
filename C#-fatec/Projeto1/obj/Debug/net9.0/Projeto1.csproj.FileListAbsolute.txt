@@ -1,0 +1,15 @@
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\bin\Debug\net9.0\Projeto1.exe
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\bin\Debug\net9.0\Projeto1.deps.json
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\bin\Debug\net9.0\Projeto1.runtimeconfig.json
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\bin\Debug\net9.0\Projeto1.dll
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\bin\Debug\net9.0\Projeto1.pdb
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\Projeto1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\Projeto1.AssemblyInfoInputs.cache
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\Projeto1.AssemblyInfo.cs
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\Projeto1.csproj.CoreCompileInputs.cache
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\Projeto1.sourcelink.json
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\Projeto1.dll
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\refint\Projeto1.dll
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\Projeto1.pdb
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\Projeto1.genruntimeconfig.cache
+C:\Estudos\Códigos\activities-fatec\C#-fatec\Projeto1\obj\Debug\net9.0\ref\Projeto1.dll
