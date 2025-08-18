@@ -3,13 +3,12 @@ namespace Aula2;
 public class Carro
 {
     //  atributos 
-    private string marca; 
+    public string marca; 
     public string modelo;
     public string ano;
     
     // Constructor
     // Obrigatório abrir um constructor quando o objeto precisar receber valores
-
     public Carro(string marca, string modelo, string ano)
     {
         marca = marca;
@@ -17,12 +16,12 @@ public class Carro
         ano = ano; 
     }
 
-    public void setMarca(string novaMarca)
+    public void setMarca(string novaMarca) // inserir dados em propriedades privadas usa o setter
     {
         this.marca = novaMarca;
     }
 
-    public string getMarca()
+    public string getMarca() // buscaar dados de uma propriedade privada usa o getter
     {   
         return marca; 
     }

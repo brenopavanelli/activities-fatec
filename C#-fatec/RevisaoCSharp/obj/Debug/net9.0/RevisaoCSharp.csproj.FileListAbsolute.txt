@@ -1,0 +1,15 @@
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\bin\Debug\net9.0\RevisaoCSharp.exe
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\bin\Debug\net9.0\RevisaoCSharp.deps.json
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\bin\Debug\net9.0\RevisaoCSharp.runtimeconfig.json
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\bin\Debug\net9.0\RevisaoCSharp.dll
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\bin\Debug\net9.0\RevisaoCSharp.pdb
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\RevisaoCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\RevisaoCSharp.AssemblyInfoInputs.cache
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\RevisaoCSharp.AssemblyInfo.cs
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\RevisaoCSharp.csproj.CoreCompileInputs.cache
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\RevisaoCSharp.sourcelink.json
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\RevisaoCSharp.dll
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\refint\RevisaoCSharp.dll
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\RevisaoCSharp.pdb
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\RevisaoCSharp.genruntimeconfig.cache
+C:\Estudos\Códigos\activities-fatec\C#-fatec\RevisaoCSharp\obj\Debug\net9.0\ref\RevisaoCSharp.dll
