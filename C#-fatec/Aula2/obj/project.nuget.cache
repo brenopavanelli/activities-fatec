@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kudVPZd/rNk=",
+  "dgSpecHash": "hKFwbm1rxOk=",
   "success": true,
-  "projectFilePath": "C:\\Estudos\\Códigos\\activities-fatec\\C#-fatec\\Aula2\\Aula2.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\breno\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.304\\microsoft.net.sdk.compilers.toolset.9.0.304.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Códigos\\activities-fatec\\C#-fatec\\Aula2\\Aula2.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
