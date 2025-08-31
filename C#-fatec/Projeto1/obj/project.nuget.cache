@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "S4dOaWLY2JEgsoI8QdinVonLUtSB3HxpYoLdVyuj4g/hEtBe5r7v1DQihv0y9bUog54mKX+BN6Fp8XGa0ht+TQ==",
+  "dgSpecHash": "wC5DtchYYGI=",
   "success": true,
-  "projectFilePath": "/home/runner/workspace/C#-fatec/Projeto1/Projeto1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Códigos\\activities-fatec\\C#-fatec\\Projeto1\\Projeto1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\breno\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\breno\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\breno\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\breno\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
