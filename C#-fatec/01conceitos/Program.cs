@@ -1,4 +1,4 @@
-﻿// Instanciar uma classe (criar um objeto a partir do molde)
+// Instanciar uma classe (criar um objeto a partir do molde)
 // Exemplo 1
 Pessoa p1 = new Pessoa(); // new = criar um novo objeto
 p1.Nome = "Thiago";
