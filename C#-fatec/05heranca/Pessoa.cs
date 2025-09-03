@@ -2,11 +2,20 @@ class Pessoa
 {
     // Atributos
     // Protected: Acessível dentro da classe e por classes herdadas
-    protected string nome;
-    protected int idade;
+    private string _nome;
+    private int _idade;
+
+    // Construtor 
+    public Pessoa(string nome, int idade)
+    {
+        _nome = nome;
+        _idade = idade;
+    }
+
+
 
     protected void ApresentarPessoa()
     {
-        Console.WriteLine($"Olá, meu nome é {nome} e tenho {idade} anos.");
+        Console.WriteLine($"Olá, meu nome é {_nome} e tenho {_idade} anos.");
     }
 }
